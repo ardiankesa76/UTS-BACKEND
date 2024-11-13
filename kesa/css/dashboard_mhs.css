@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    margin: 0;
+    padding: 20px;
+}
+
+.dashboard-container {
+    max-width: 800px; /* Maximum width of the container */
+    margin: 40px auto; /* Margin top/bottom and auto left/right */
+    background-color: #fff;
+    border-radius: 12px; /* Rounded corners */
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: transform 0.3s ease; /* Transition effect */
+}
+
+.dashboard-container:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 28px; /* Larger font size */
+    margin-bottom: 20px; /* Bottom margin */
+    text-transform: uppercase; /* Uppercase letters */
+    letter-spacing: 1px; /* Letter spacing */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden; /* Prevent overflow */
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #6a11cb; /* Header background color */
+    color: white;
+    font-weight: bold; /* Bold header */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Zebra stripes for even rows */
+}
+
+tr:hover {
+    background-color: #e1bee7; /* Highlight on hover */
+}
+
+.logout-button {
+    display: block;
+    margin: 20px auto; /* Center the logout button */
+    padding: 12px 24px; /* Larger padding */
+    font-size: 18px; /* Larger font size */
+    color: white;
+    background-color: #ff4081; /* Pink background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition effects */
+}
+
+.logout-button:hover {
+    background-color: #ff1f74; /* Darker pink on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+@media (max-width: 600px) {
+    .dashboard-container {
+        width: 100%;
+        padding: 20px;
+    }
+    th, td {
+        font-size: 14px;
+    }
+}
